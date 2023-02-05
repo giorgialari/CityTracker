@@ -1,0 +1,35 @@
+.city-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.margin-container {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgcontainer {
+    background-image: url('src/assets/img/los_angeles.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: auto;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.alert {
+    display: none;
+}
