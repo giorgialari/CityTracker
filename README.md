@@ -1,4 +1,16 @@
-# FruitTracker
+# CityTracker
+<img width="1438" alt="Schermata 2023-02-05 alle 13 47 06" src="https://user-images.githubusercontent.com/91114037/216819493-d8e4b639-5723-42be-a51e-71da56edc4d7.png">
+
+
+In this project the teleport.org API was used to load data from the API.
+
+With this site you can view the score of the main cities of the world.
+
+To use this site bootstrap and the bootswatch morph theme have been used to build the graphics.
+
+The entire site has been deployed on Firebase.
+
+Deploy link: https://citytracker-e30a4.web.app/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
@@ -13,14 +25,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
