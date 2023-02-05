@@ -2,11 +2,9 @@
 <img width="1438" alt="Schermata 2023-02-05 alle 13 47 06" src="https://user-images.githubusercontent.com/91114037/216819493-d8e4b639-5723-42be-a51e-71da56edc4d7.png">
 
 
-In this project the teleport.org API was used to load data from the API.
+In this project the teleport.org API was used to load data from the API and with this site you can view the score of the main cities of the world.
 
-With this site you can view the score of the main cities of the world.
-
-To use this site bootstrap and the bootswatch morph theme have been used to build the graphics.
+To use this site `bootstrap` and the `bootswatch morph theme` have been used to build the graphics.
 
 The entire site has been deployed on Firebase.
 
