@@ -58,6 +58,7 @@
 .city-detail-card-header {
   font-weight: bold;
   color: white;
+  text-align: center;
 }
 .floating-btn {
   /* Gradiente più scuro */
@@ -66,7 +67,7 @@
     rgba(100, 100, 100, 0.6),
     rgba(50, 50, 50, 0.8)
   );
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   color: white;
   padding: 10px 20px;
   border: none;
