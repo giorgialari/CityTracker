@@ -1,0 +1,22 @@
+<div class="full-screen" [style.backgroundImage]="'url(' + cities.images + ')'">
+  <!-- [style.backgroundImage]="'url(' + cities.images.photos[0].image.mobile + ')'"  tolta dal div full screen per bassa qualità-->
+  <!-- Descrizione della città -->
+  <div class="city-detail-summary mb-md-5">
+    <div [innerHTML]="cities.summary"></div>
+  </div>
+
+  <!-- Tabella con le informazioni sulla città -->
+  <div class="city-detail-info-cards">
+    <div *ngFor="let city of cities.categories" class="city-detail-card">
+      <div class="city-detail-card-header">{{ city.name }}</div>
+      <div class="city-detail-card-content">
+        <span [style.color]="city.color"
+          >{{ city.score_out_of_10 | number : "1.0-0" }}%</span
+        >
+      </div>
+    </div>
+  </div>
+  <button class="floating-btn" (click)="goBack()">
+    <i class="fas fa-arrow-left-long"></i>
+  </button>
+</div>

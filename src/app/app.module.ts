@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { CityDetailComponent } from './home/city-detail/city-detail.component';
 
 
 
@@ -24,7 +25,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CityDetailComponent,
   ],
   imports: [
     BrowserModule,

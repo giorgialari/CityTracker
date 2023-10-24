@@ -1,35 +1,74 @@
-.city-container {
-    max-width: 500px;
-    margin: auto;
+.full-screen{
+  height: 100vh;
+  width: 100%;
+  background-image: url("src/assets/img/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.center-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-.margin-container {
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.imgcontainer {
-    background-image: url('src/assets/img/los_angeles.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    margin: auto;
-}
 
 .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
 }
 
 .alert {
-    display: none;
+  display: none;
 }
+
+/* Searchbar e Homepage */
+.title-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(220, 220, 220, 0.1),
+    rgba(180, 180, 180, 0.2)
+  );
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.title-container h1 {
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+}
+.search-input,
+.search-button {
+  height: 40px; /* Ad esempio, 40px, ma puoi scegliere il valore che preferisci */
+}
+
+.search-input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+}
+
+.search-button {
+  padding: 10px 20px;
+  width: auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+

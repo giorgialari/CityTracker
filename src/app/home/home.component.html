@@ -1,40 +1,29 @@
-<div class="imgcontainer" [ngClass]="{'imgcontainer': !cities.categories}">
-
-    <div class="city-container" 
-    [ngClass]="{'margin-container': cities.categories, 'center-items': !cities.categories}">
-    <div class="container-fluid mt-2">
-        <h1 *ngIf="!cities.categories">Welcome to City Tracker, enter a city name to check its score.</h1>
-        <div class="d-flex mb-2">
-            <input [formControl]="searchControl" class="form-control me-sm-2" type="search" placeholder="Search">
-            <button type="button" class="btn btn-outline-success btn-sm" (click)="search()">Search</button>
-        </div>
-        <div class="alert alert-danger mt-2 mx-1 text-light" id="alert" role="alert">
-            The city name may be incorrect or not exist in the database!
-        </div>
+<div class="full-screen">
+  <div
+    *ngIf="!cities.categories"
+    class="d-flex flex-column justify-content-center col-6 mt-2"
+  >
+    <div class="title-container mb-2">
+      <!-- <h1 class="mb-3">City Tracker</h1> -->
+      <h1>Welcome! Enter a city name to check its score.</h1>
+    </div>
+    <div class="search-bar-container d-flex justify-content-center">
+      <input
+        [formControl]="searchControl"
+        type="text"
+        class="search-input col-8 col-md-10"
+        placeholder="Search"
+      />
+      <button class="btn search-button col-2" (click)="search()">Search</button>
     </div>
 
-
-
-    <div *ngIf="cities" class="mx-1">
-        <div [innerHTML]="cities.summary"></div>
-        <table class="table" *ngIf="cities.categories">
-            <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Color</th>
-                    <th scope="col">Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let city of cities.categories">
-                    <th scope="row" class="col-1">{{city.name}}</th>
-                    <td class="d-flex justify-content-center" class="col-1">
-                        <div class="circle" [style.backgroundColor]="city.color"></div>
-                    </td>
-                    <td class="col-1">{{city.score_out_of_10 | number:'1.1-1'}}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div
+      class="alert alert-danger mt-2 mx-1 text-light"
+      id="alert"
+      role="alert"
+    >
+      The city name may be incorrect or not exist in the database!
     </div>
+  </div>
 </div>
-</div>
+
