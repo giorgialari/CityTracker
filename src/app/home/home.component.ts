@@ -19,7 +19,7 @@ export class HomeComponent {
 
 
   search() {
-    const city = this.searchControl.value.toLowerCase().replace(/ /g, "-");
+    const city = this.searchControl.value.trim().toLowerCase().replace(/ /g, "-");
     document.getElementById('alert')!.style.display = 'none';
 
     const getScores$ = this.citiesService.getCityScores(city);
