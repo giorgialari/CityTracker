@@ -1,5 +1,5 @@
 # CityTracker
-<img width="1438" alt="Schermata 2023-02-05 alle 13 47 06" src="https://user-images.githubusercontent.com/91114037/216819493-d8e4b639-5723-42be-a51e-71da56edc4d7.png">
+<img width="1439" alt="Schermata 2023-10-29 alle 12 34 06" src="https://github.com/giorgialari/CityTracker/assets/91114037/2f278d98-a2ba-4f42-9f07-10f90429e0c2">
 
 
 In this project the teleport.org API was used to load data from the API and with this site you can view the score of the main cities of the world.
